@@ -55,19 +55,20 @@
 }
 
 .login_util {
-  display: flex;
+  position: relative;
   margin: 2px 0 5px;
+  height: 62px;
 }
 
 .login_util .keep_login_wrap {
-  width: 280px;
-  height: 62px;
+  float: left;
 }
 
 .login_util .keep_login_wrap .keep_login_info {
   display: none;
-  position: relative;
-  margin-top: 7px;
+  position: absolute;
+  top: 34px;
+  left: 0;
   padding: 7px 6px;
   background: #f4f4f4;
   font-size: 12px;
@@ -86,22 +87,20 @@
 }
 
 input[id="keep_login"]:checked + label + .keep_login_info {
-  display: block;
+  display: inline-block;
 }
 
 .find_id_pw {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-  align-items: center;
+  float: right;
   height: 25px;
+  line-height: 25px;
   font-weight: 400;
   font-size: 16px;
   color: #0074e9;
 }
 
 .find_id_pw .next {
-  margin-left: 6px;
+  margin: 4px 0 0 4px;
 }
 
 .btn {
@@ -149,7 +148,6 @@ input[id="keep_login"]:checked + label + .keep_login_info {
 
   .login_util .keep_login_wrap {
     margin-bottom: 8px;
-    width: 240px;
   }
 
   .find_id_pw {
